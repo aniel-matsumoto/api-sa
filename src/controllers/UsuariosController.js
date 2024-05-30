@@ -17,7 +17,6 @@ class UsuariosController {
   async adicionar(req, resp) {
     try {
       const novoUsuario = req.body;
-      
       // Verificação de campos obrigatórios
       if (!novoUsuario.nome_cliente || !novoUsuario.cpf_cliente || !novoUsuario.telefone_cliente || !novoUsuario.email_cliente || !novoUsuario.senha_cliente) {
         console.log(novoUsuario);
